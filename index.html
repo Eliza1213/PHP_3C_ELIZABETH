@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Validacion</title>
+</head>
+<body >
+    <h1>Formulario de Registro</h1><br>
+    <form action="./login.php" method="post">
+        
+        <label for="name">Nombre del Usuario :</label>
+        <br>
+        <input type="text" id="name"  name="name" pattern="[a-zA-Z\s]+"
+        placeholder="Nombre del Usuario" title="este campo solo recibe letras">
+        <br><br>
+        <label for="pass"> Password : </label>
+        <br>
+        <input type="pass"  id="pass" name="pass" required
+        placeholder="contraseña" >
+        <br><br>
+        <label for="edad"> Edad :</label>
+        <br>
+        <input type="number" id="edad" name="edad" min="18" required
+        placeholder="edad (número)">
+        <br>
+        <input type="submit" value="Iniciar Sesión">
+
+    </form>
+</body>
+</html>
